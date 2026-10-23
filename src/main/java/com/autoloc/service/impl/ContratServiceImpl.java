@@ -36,10 +36,11 @@ public class ContratServiceImpl implements ContratService {
 
     @Override
     public Contrat update(Long id, Contrat contrat) {
-        if (!contratRepository.existsById(id)) {
-            throw new EntityNotFoundException("Contrat introuvable avec l'id " + id);
-        }
+        Contrat existant = getById(id);
         contrat.setIdContrat(id);
+        // Les paiements ne sont pas exposés dans le JSON : on les conserve,
+        // sinon orphanRemoval les supprimerait lors du save().
+        contrat.setPaiements(existant.getPaiements());
         return contratRepository.save(contrat);
     }
 

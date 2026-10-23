@@ -1,5 +1,6 @@
 package com.autoloc.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import com.autoloc.enums.CategorieVehicule;
@@ -36,8 +37,10 @@ public class Vehicule {
     private List<Equipement> equipements = new ArrayList<>();
 
     @OneToMany(mappedBy = "vehicule")
+    @JsonIgnore
     private List<Reservation> reservations = new ArrayList<>();
 
     @OneToMany(mappedBy = "vehicule", cascade = CascadeType.ALL)
+    @JsonIgnore
     private List<Maintenance> maintenances = new ArrayList<>();
 }

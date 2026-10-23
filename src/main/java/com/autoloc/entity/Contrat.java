@@ -1,5 +1,6 @@
 package com.autoloc.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import java.math.BigDecimal;
@@ -22,5 +23,6 @@ public class Contrat {
 
     // Composition : les paiements disparaissent avec le contrat
     @OneToMany(mappedBy = "contrat", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
     private List<Paiement> paiements = new ArrayList<>();
 }

@@ -1,5 +1,6 @@
 package com.autoloc.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import java.util.ArrayList;
@@ -16,8 +17,10 @@ public class Agence {
     private String telephone;
 
     @OneToMany(mappedBy = "agence", cascade = CascadeType.ALL)
+    @JsonIgnore
     private List<Employe> employes = new ArrayList<>();
 
     @OneToMany(mappedBy = "agence", cascade = CascadeType.ALL)
+    @JsonIgnore
     private List<Vehicule> vehicules = new ArrayList<>();
 }
