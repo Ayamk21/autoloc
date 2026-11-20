@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:8086/paiement/ajoute
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "montant": 150.0,
+      "datePaiement": "2026-10-12",
+      "modePaiement": "CARTE"
+     
+    }
+order: 1000

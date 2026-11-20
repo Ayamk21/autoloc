@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:8086/reservation/update
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"idReservation\": 1,\r
+
+    \  \"dateDebut\": \"2026-02-10\",\r
+
+    \  \"dateFin\": \"2028-05-10\",\r
+
+    \  \"statut\": \"ANNULEE\"\r
+
+    \  }"
+order: 2000

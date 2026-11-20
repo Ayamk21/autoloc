@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:8086/maintenance/update
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \     \"idaintenance\": 4,\r
+
+    \  \"dateDebut\": \"2026-10-20\",\r
+
+    \  \"dateFin\": \"2027-03-22\",\r
+
+    \  \"description\": \"Date\"\r
+
+    }"
+order: 2000

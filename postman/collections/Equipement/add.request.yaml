@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:8086/equipement/ajoute
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"idEquipement\": 1,\r
+
+    \    \"libelle\": \"libelle\",\r
+
+    \    \"vehicules\": null\r
+
+    }"
+order: 1000

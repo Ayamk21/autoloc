@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8086/agence/getById/6
+method: DELETE
+body:
+  type: json
+  content: ""
+order: 4000

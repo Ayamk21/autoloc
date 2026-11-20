@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:8086/contrat/ajoute
+method: POST
+body:
+  type: json
+  content: " {\"dateSignature\": \"2026-10-12\",\r
+
+    \  \"montantTotal\": 500.0,\r
+
+    \  \"valide\": true}"
+order: 1000

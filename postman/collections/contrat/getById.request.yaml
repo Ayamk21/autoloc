@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8086/contrat/getById/4
+method: GET
+body:
+  type: json
+  content: ""
+order: 3000

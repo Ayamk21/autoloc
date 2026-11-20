@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:8086/client/ajoute
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"nomClient\": \"maram\",\r
+
+    \  \"prenomClient\": \"soltani\",\r
+
+    \  \"emailClient\": \"maram@gmail.com\",\r
+
+    \  \"telephone\": \"25413690\",\r
+
+    \  \"numPermis\": \"1\"\r
+
+    }"
+order: 1000

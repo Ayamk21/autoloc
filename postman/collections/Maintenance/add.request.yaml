@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:8086/maintenance/ajoute
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"dateDebut\": \"2026-02-20\",\r
+
+    \  \"dateFin\": \"2027-03-22\",\r
+
+    \  \"description\": \"Date\"\r
+
+    }"
+order: 1000

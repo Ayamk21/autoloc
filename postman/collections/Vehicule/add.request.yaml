@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:8086/vehicule/ajoute
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "immatriculation": "123 TUN 4567",
+      "marque": "Toyota",
+      "modele": "Yaris",
+      "statut": "DISPONIBLE",
+      "tarifJournalier": 80.0
+    }
+order: 1000

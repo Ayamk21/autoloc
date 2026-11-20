@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8086/vehicule/desaffecterEquipement/1/1
+method: PUT
+order: 3000

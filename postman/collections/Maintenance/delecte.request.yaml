@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8086/maintenance/delete/4
+method: DELETE
+body:
+  type: json
+  content: ""
+order: 4000

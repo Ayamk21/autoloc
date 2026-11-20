@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:8086/agence/update
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"nom\": \"nour\",\r
+
+    \  \"ville\": \"Ariana\",\r
+
+    \  \"adresse\": \"Tunis\",\r
+
+    \  \"telephone\": 5874000\r
+
+    }"
+order: 2000

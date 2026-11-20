@@ -1,0 +1,9 @@
+$kind: http-request
+name: http://localhost:8086/agence/getById/1
+description: ""
+url: http://localhost:8086/agence/getById/1
+method: GET
+body:
+  type: json
+  content: ""
+order: 5000

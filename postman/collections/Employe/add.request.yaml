@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:8086/employe/ajoute
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "name": "dd",
+      "prenom": "qqq",
+      "role": "AGENT"
+    }
+order: 1000

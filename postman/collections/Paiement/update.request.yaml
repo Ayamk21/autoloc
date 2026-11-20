@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:8086/paiement/update
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \"idPaiement\": 4,\r
+
+    \  \"montant\": 200.0,\r
+
+    \  \"datePaiement\": \"2026-10-12\",\r
+
+    \  \"modePaiement\": \"CARTE\"\r
+
+    \ \r
+
+    }"
+order: 2000

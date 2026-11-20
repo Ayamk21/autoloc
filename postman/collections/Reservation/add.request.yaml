@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:8086/reservation/ajoute
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      
+      "dateDebut": "2026-02-10",
+      "dateFin": "2026-05-10",
+      "statut": "EN_ATTENTE"
+      }
+order: 1000

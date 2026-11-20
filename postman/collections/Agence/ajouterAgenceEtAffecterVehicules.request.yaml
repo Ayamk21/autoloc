@@ -1,0 +1,31 @@
+$kind: http-request
+url: http://localhost:8086/agence/ajouterAgenceEtAffecterVehicules
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "nom": "AutoLoc Sousse",
+      "adresse": "Avenue Habib Bourguiba",
+      "ville": "Sousse",
+      "telephone": 73000000,
+      "vehicules": [
+        {
+          "immatriculation": "210 TUN 1111",
+          "marque": "Peugeot",
+          "modelo": "208",
+          "categorie": "CITADINE",
+          "tarifJournalier": 90.0,
+          "statut": "DISPONIBLE"
+        },
+        {
+          "immatriculation": "210 TUN 2222",
+          "marque": "Kia",
+          "modelo": "Sportage",
+          "categorie": "SUV",
+          "tarifJournalier": 150.0,
+          "statut": "DISPONIBLE"
+        }
+      ]
+    }
+order: 2000

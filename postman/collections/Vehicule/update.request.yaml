@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://localhost:8086/vehicule/update
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"idVehicule\": 1,\r
+
+    \  \"immatriculation\": \"123 TUN 4567\",\r
+
+    \  \"marque\": \"gg\",\r
+
+    \  \"modele\": \"Yaris\",\r
+
+    \  \"statut\": \"DISPONIBLE\",\r
+
+    \  \"tarifJournalier\": 80.0\r
+
+    }"
+order: 2000
